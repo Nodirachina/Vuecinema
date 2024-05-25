@@ -1,0 +1,65 @@
+@import url(../fonts.css);
+
+/* ****Root Start**** */
+:root {
+    --CB: 'Comfortaa-Bold';
+    --CR: 'Comfortaa-Regular';
+    --MR: 'Montserrat-Bold';
+    --MB: 'Montserrat-Regular';
+    --RM: 'Roboto-Medium';
+    --RR: 'Roboto-Regular';
+    --prenav-bg: linear-gradient(135.00deg, rgb(56, 0, 175) 0%, rgb(191, 114, 4) 97.523%, rgb(194, 117, 0) 100%, rgb(194, 117, 0) 100%);
+    --dark_blue: #040d1f;
+    --white: #ffffff;
+    --orange: #f18128;
+    --grey: #c8c8c8;
+    --nav-bg: #010305cc;
+    --border-bg: #070f1933;
+    --intro-color: #000000;
+}
+
+
+/* ****Root End**** */
+
+.intro {
+    position: relative;
+    padding-top: 43px;
+    padding-bottom: 80px;
+    background: linear-gradient(90.00deg, rgb(222, 247, 255),rgb(244, 252, 255) 45.639%,rgba(255, 255, 255, 0) 100.721%);
+}
+
+.intro-text {
+    color: var(--intro-color);
+    font-family: var(--RR);
+    font-size: 18px;
+    line-height: 27px;
+    max-width: 558px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 56px;
+}
+
+.intro-video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+}
+
+.intro-video__film {
+    height: 100%;
+}
+
+/* **** Media Start **** */
+
+@media (max-width: 800px) {
+
+   .intro-img{
+    max-width: 318px;
+    width: 100%;
+   }
+      
+}
+
+/* **** Media End **** */

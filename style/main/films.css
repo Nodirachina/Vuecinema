@@ -1,0 +1,122 @@
+@import url(fonts.css);
+
+/* ****Root Start**** */
+:root {
+    --CB: 'Comfortaa-Bold';
+    --CR: 'Comfortaa-Regular';
+    --MR: 'Montserrat-Bold';
+    --MB: 'Montserrat-Regular';
+    --RM: 'Roboto-Medium';
+    --RR: 'Roboto-Regular';
+    --prenav-bg: linear-gradient(135.00deg, rgb(56, 0, 175) 0%, rgb(191, 114, 4) 97.523%, rgb(194, 117, 0) 100%, rgb(194, 117, 0) 100%);
+    --dark_blue: #040d1f;
+    --white: #ffffff;
+    --orange: #f18128;
+    --grey: #c8c8c8;
+    --nav-bg: #010305cc;
+    --border-bg: #070f1933;
+}
+
+
+
+/* ****Root End**** */
+
+.films {
+    padding-bottom: 71px;
+}
+
+.films-catalog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    grid-auto-rows: 370px;
+}
+
+.films-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+    background: linear-gradient(180.00deg, rgba(241, 129, 40, 0.35), rgba(0, 0, 0, 0.71) 51.042%, rgba(7, 15, 25, 0.8) 100%);
+    grid-auto-rows: 370px;
+    overflow: hidden;
+}
+
+.films-item:hover .films-img {
+    transform: scale(1.2);
+
+}
+
+.films-img {
+    position: absolute;
+    z-index: -1;
+    border-radius: 6px;
+    width: 100%;
+    transition: all 500ms;
+}
+
+.films-icon__photo {
+    color: var(--white);
+    margin-top: 58px;
+}
+
+.films-time {
+    color: var(--white);
+    font-family: var(--MR);
+    font-size: 14px;
+    line-height: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--white);
+    border-radius: 9px;
+    background: var(--border-bg);
+    padding: 8px 27px;
+    margin-top: 13px;
+    margin-bottom: 30px;
+
+}
+
+.films-title {
+    color: var(--white);
+    font-family: var(--MR);
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 13px;
+
+}
+
+.films-text {
+    max-width: 234px;
+    width: 100%;
+    color: var(--white);
+    font-family: var(--RR);
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    overflow: auto;
+}
+
+.films-text::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+
+/* **** Media Start **** */
+
+@media (max-width: 800px) {
+
+    .films-catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .films-catalog {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+/* **** Media End **** */
